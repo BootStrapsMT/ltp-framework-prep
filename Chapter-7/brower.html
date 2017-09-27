@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Onload Example</title>
+        <script> 
+            window.onload = function(){ 
+                document.getElementById('myButton').addEventListener('click', respond);
+            }
+            
+            function respond(e)
+            {
+                document.getElementById('one').innerHTML += "1111111";
+                document.getElementById('two').innerHTML += "2222222";
+            }
+            </script>        
+    </head>
+    <body>
+        <div id="one">Hello From Div 1</div>
+        <div id="two">Hello From Div 2</div>
+        <button id="myButton">Click</button>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Onload Example</title>
+        <script>
+            var clicks = 0;
+            window.onload = function(){
+                console.log("window.onload run....");
+                document.getElementById('myButton').addEventListener('click', respond);
+            }
+            
+            function respond(e)
+            {
+                clicks++;
+                console.log("fsfdsfsd " + clicks + " times");
+            }
+            
+            
+            </script>
+        
+    </head>
+    <body>
+        
+        <button id="myButton">Click</button>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Onload Example</title>
+        <script> 
+            window.onload = function(){ 
+                document.getElementById('content').addEventListener('click', respond);
+                document.getElementById('one').addEventListener('click', respondOne);
+                document.getElementById('two').addEventListener('click', respondTwo);
+            }
+            
+            function respondOne(e)
+            {
+                console.log("p: one");
+            }
+            
+            function respondTwo(e)
+            {
+                console.log("p: Two");
+            }
+            
+            function respond(e)
+            {
+                //console.log("Div: content");
+                document.getElementById('content').innerHTML = "7777777777";
+                document.getElementById('content').style.color = "green";
+            }
+            </script>        
+    </head>
+    <body>
+        <div id="content">
+            <p id="one">Hello From p 1</p>
+            <p id="two">Hello From p 2</p>
+        </div>
+        
+        <button id="myButton">Click</button>
+    </body>
+</html>
