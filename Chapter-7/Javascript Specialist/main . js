@@ -1,0 +1,15 @@
+window.onload= function() {
+    document.getElementById("consoleButton").addEventListener("click", firstResponse);
+    document.getElementById("browserButton").addEventListener("click", SecondResponse);
+};
+
+function firstResponse(e)
+{
+    console.log("To console!");
+    alert("Console button clicked");
+}
+function SecondResponse(e)
+{
+    document.write("To browser!");
+    alert("Browser button clicked");
+}
